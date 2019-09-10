@@ -1,0 +1,6 @@
+<div class="feed" *ngFor="let feed of feeds$ | async">
+    {{feed.title}}
+    <img class="feed-img" [src]="feed.imageUrl">
+    {{feed.description}}
+    {{feed.price}}
+</div>

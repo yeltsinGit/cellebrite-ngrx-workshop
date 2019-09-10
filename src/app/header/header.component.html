@@ -1,0 +1,7 @@
+<nav id="header" *ngIf="auth$ | async as auth">
+  <div>Ngx workshop. Hello {{auth.userName}}</div>
+  <div>
+    <a class="btn btn-default" routerLink="/feed">Feed</a>
+    <a class="btn btn-primary" routerLink="/login">Login</a>
+  </div>
+</nav>

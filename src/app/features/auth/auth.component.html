@@ -1,0 +1,8 @@
+<div class="container">
+  <form [formGroup]="form">
+    <div class="d-flex">
+      <input type="text" formControlName="userName">
+      <button class="btn btn-primary" [disabled]="!form.valid" (click)="login()">Login</button>
+    </div>
+  </form>
+</div>
